@@ -10,6 +10,14 @@
   </head>
 
   <body>
+  <header class="top">
+    <%= link_to root_path do %>
+      <h1>My First Appの復習</h1>
+    <% end %>
+    <%= link_to posts_new_path do %>
+      <div class="btn">新規投稿</div>
+    <% end %>
+  </header>
     <%= yield %>
   </body>
 </html>
