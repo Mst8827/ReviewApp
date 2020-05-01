@@ -1,0 +1,14 @@
+<h1>My First Appの復習</h1>
+<div class="content">投稿一覧
+  <% @posts.each do |post|%>
+    <div class="post">
+      <div class="date">
+        <%= post.created_at %>
+      </div>
+      <div class="txt">
+        <%= post.content %>
+      </div>
+    </div>
+  <% end%>
+</div>
+
